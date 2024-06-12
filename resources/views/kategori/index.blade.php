@@ -23,7 +23,7 @@
                     <th>ID</th>
                     <th>Deskripsi</th>
                     <th>Kategori</th>
-                    <!-- <th>Keterangan Kategori</th> -->
+                    <th>Keterangan Kategori</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
@@ -33,7 +33,7 @@
                         <td>{{ $kategori->id }}</td>
                         <td>{{ $kategori->deskripsi }}</td>
                         <td>{{ $kategori->kategori }}</td>
-                        <!-- <td>{{ $kategori->ketkategori }}</td> -->
+                        <td>{{ $kategori->kategori_deskripsi }}</td>
                         <td>
                             <a href="{{ route('kategori.show', $kategori->id) }}" class="btn btn-info"><i class="bi bi-eye"></i> Show</a>
                             <a href="{{ route('kategori.edit', $kategori->id) }}" class="btn btn-primary"><i class="bi bi-pencil"></i> Edit</a>
